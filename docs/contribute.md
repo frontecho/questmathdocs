@@ -40,7 +40,7 @@
 ### 向 Pull Request 追加更改
 
 1.  打开 [QuestMath Tutoring Hub 的 Pull Request 列表](https://github.com/frontecho/questmathdocs/pulls)，找到您提交的 Pull Request 并点击。
-2.  Pull Request 页面的标题下方将会有一段例如 `<您的ID> wants to merge x commits into questmathdocs:master from <您的ID>:patch-1` 的文字，点击 `<您的ID>:patch-1` 部分。
+2.  Pull Request 页面的标题下方将会有一段例如 `<您的ID> wants to merge x commits into questmathdocs:main from <您的ID>:patch-1` 的文字，点击 `<您的ID>:patch-1` 部分。
 3.  您应该会被重定向到您的分支仓库中，而且文件列表左上角的分支名称是你提交 Pull Request 的分支名称（在本示例中应为 `patch-1`）。
 4.  进行您需要的更改。
     -   如果您需要编辑单个文件或多个互相无关联的页面的内容，请直接找到你要的文件并进行更改，更改完成后滚动到页面下方，按照本文中 [commit 信息格式规范](#commit-) 填写 commit 信息，之后点击 **Commit changes** 按钮提交修改。
@@ -49,7 +49,7 @@
 
 ### 对于目录和引用的变更
 
-通常情况下，如果您需要添加一个新页面，或者修改已有页面在目录中的链接，您就需要对 [`mkdocs.yml`](https://github.com/OI-wiki/OI-wiki/blob/master/mkdocs.yml) 文件作出改动。
+通常情况下，如果您需要添加一个新页面，或者修改已有页面在目录中的链接，您就需要对 [`mkdocs.yml`](https://github.com/frontecho/questmathdocs/blob/main/mkdocs.yml) 文件作出改动。
 
 添加新页面可以参考既有的格式。但除非是进行重构或修正名词，否则 **我们不建议对既有页面的引用链接进行修改**，Pull Requests 中不必要的修改也将被驳回。
 
@@ -106,7 +106,6 @@
 
 1.  标题请写明本次 PR 的目的（做了 **什么** 工作，修复了 **什么** 问题）。
 2.  内容请简要叙述修改的内容。如果修复了一个 issue 的问题，请在内容中添加 `fix #xxxx` 字段，其中 `xxxx` 代表 issue 的编号。
-3.  请您仔细阅读 [贡献指南](https://github.com/OI-wiki/OI-wiki/blob/master/.github/CONTRIBUTING.md) 和 [社区公约](https://github.com/OI-wiki/OI-wiki/blob/master/CODE_OF_CONDUCT.md)，并在同意后勾选 PR 模板中的框，表示您同意了以上指南和公约。
 
 对于 Pull Request 的标题，推荐使用如下格式书写：
 
@@ -130,12 +129,14 @@
 
 ### 协作流程
 
-1.  在收到一个新的 Pull Request 之后，GitHub 会给 reviewer 发送邮件；
+1.  在收到一个新的 Pull Request 之后，GitHub 会给管理员发送邮件；
+<!--
 2.  与此同时，在 [GitHub Actions](https://github.com/frontecho/questmathdocs/actions) 上会运行测试，它会把进度同步在 PR 页面的下方。GitHub Actions 主要用来确认 PR 中内容的修改不会影响到网站构建的进程；Netlify 用来把 PR 中的更新构建出来，方便 reviewer 审核（在测试完成后点击 Details 可以了解更多）；
 3.  reviewer 可能会发现问题，并提出 `review` 或 `suggested changes`（建议更改，显示为灰色图标）/`requested changes`（强制更改，显示为红色图标，只会在 reviewer 拥有 repo 写权限时出现）。一般来说，reviewer 也会附上建议和需要进行的更改，在这时，您将会需要继续向 Pull Request 追加其他更改。更改的方法可以参考 `在 GitHub 上编辑` 或者 `使用 Git 在本地进行编辑` 部分的 `向 Pull Request 追加更改` 部分。
-4.  在足够多 reviewer 投票通过一个 PR 之后，这个 PR 才可以合并到 master 分支中；
-5.  在合并到 master 分支之后，GitHub Actions 会重新构建一遍网站内容，并更新到 gh-pages 分支；
-6.  这时服务器才会拉取 gh-pages 分支的更新，并重新部署最新版本的内容。
+4.  在足够多 reviewer 投票通过一个 PR 之后，这个 PR 才可以合并到 main 分支中；
+-->
+2.  管理员审核通过后，PR 将合并到 main 分支之后，GitHub Actions 会重新构建一遍网站内容，并更新到 gh-pages 分支；
+3.  这时服务器才会拉取 gh-pages 分支的更新，并重新部署最新版本的内容。
 
 ## markdown 基本语法与 mkdocs 特性
 ### 学习编写 markdown 文件
