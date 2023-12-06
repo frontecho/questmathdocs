@@ -75,7 +75,7 @@ extra:
 
 extra_css:
   # - stylesheets/custom.css
-  # - stylesheets/extra.css
+  - stylesheets/extra.css
   - stylesheets/flink.css
 
 extra_javascript:
