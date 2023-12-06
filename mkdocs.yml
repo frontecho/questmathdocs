@@ -145,8 +145,8 @@ plugins:
   - glightbox
   - statistics
   # - changelog
-  - heti:
-      disable_serve: true
+  # - heti:
+  #     disable_serve: true
   - git-revision-date-localized:
       enable_creation_date: true
   - git-committers:
