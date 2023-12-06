@@ -1,9 +1,15 @@
+---
+statistics: True
+---
+
 # QuestMath Tutoring Hub
 # o(〃'▽'〃)o Hi!
 
 <!-- prettier-ignore-start -->
 !!! success "Hello World"
         Nice to Meet You in QuestMath Tutoring Hub ！
+        
+        本站共有 {{ pages }} 个页面，{{ words }} 个字，{{ codes }} 行代码。
 <!-- prettier-ignore-end -->
 
 <!-- prettier-ignore-start -->

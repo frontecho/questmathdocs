@@ -59,15 +59,15 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 
-extra:
+# extra:
   # annotate:
   #   json: [.s2]
   # analytics:
   #   provider: google #custom
   #   property: G-DYETCPM289
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/frontecho/questmathdocs/
+  # social:
+  #   - icon: fontawesome/brands/github
+  #     link: https://github.com/frontecho/questmathdocs/
   #   - icon: fontawesome/solid/rss
   #     link: https://blog.tonycrane.cc/
   #   - icon: fontawesome/solid/home
@@ -141,10 +141,18 @@ plugins:
   - tags:
       tags_file: tags.md
   - glightbox
-  # - statistics:
-  #     page_check_metadata: comment
+  - statistics
   # - changelog
-  # - heti
+  - heti:
+      disable_serve: true
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - git-committers:
+      repository: frontecho/questmathdocs
+      branch: main
+      token: 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
+      exclude:
+        - README.md
 
 validation:
   nav:
@@ -168,11 +176,11 @@ not_in_nav: |
 nav:
   - 🏡Home:
     - index.md
-    - 文档编写规范: docsrules.md
-    - 参与文档编写: contribute.md
+    - 🍰文档编写规范: docsrules.md
+    - ✏️参与文档编写: contribute.md
     - 🔗友链: links.md
     - 🔖标签: tags.md
-  - Calculus:
+  - 📚Calculus:
     - calculus/index.md
     - 1 Functions: 
       - calculus/ch1/index.md
