@@ -150,7 +150,7 @@ plugins:
   - git-committers:
       repository: frontecho/questmathdocs
       branch: main
-      token: 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
+      token: !ENV ["GH_TOKEN"]
       exclude:
         - README.md
 
