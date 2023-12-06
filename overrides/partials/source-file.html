@@ -17,7 +17,9 @@
       {{ lang.t("source.file.date.updated") }}:
       {{ page.meta.revision_date }}
     {% endif %}
+  </small>
 
+  <small>
     <br>Contributors:</br>
     <nav class="contributors">
     {%- for user in committers[:5] if user -%}
@@ -31,6 +33,6 @@
     {% endif %}
     <a href="{{ page.edit_url | replace(part, 'commits') }}" class="md-author md-author--more"> ... </a>
     </nav>
-
   </small>
+
 </div>
