@@ -27,9 +27,13 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: |
-          pip install mkdocs-material mkdocs-glightbox mkdocs-minify-plugin \
-          mkdocs-statistics-plugin mkdocs-heti-plugin mkdocs-git-revision-date-localized-plugin \
+          pip install mkdocs-material \
+          mkdocs-glightbox \
+          mkdocs-minify-plugin \
+          mkdocs-statistics-plugin \
+          mkdocs-git-revision-date-localized-plugin \
           mkdocs-git-committers-plugin-2
+        # mkdocs-heti-plugin jieba
       - run: mkdocs gh-deploy --force
         env:
           MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.MKDOCS_GIT_COMMITTERS_APIKEY }}

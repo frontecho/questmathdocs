@@ -1,20 +1,30 @@
 # 参与文档编写
 
-以下大部分内容改编自 OI-Wiki 的 [编写指南](https://oi-wiki.org/intro/htc/)，感谢前辈的付出与试验！
+以下大部分内容改编自 OI-Wiki 的 [编写指南](https://oi-wiki.org/intro/htc/)，感谢前辈的付出与经验！
 
 !!! warning 欢迎进行测试
     您可以随便打开网站Calculus目录下的一个页面点击右上角标题旁边的 **编辑此页** 按钮进行编辑测试，其余步骤见下文。
 
     另外，您也可以进入Github仓库的 `docs` 目录下进行新建页面的操作，操作方法同[编辑多个页面内的内容](#_3)，注意查看下文的[对于目录和引用的变更](#_4)修改根目录下的配置文件 `mkdocs.yml` ，这样才会在网站目录中显示！
 
-## 在 GitHub 上编辑（请仔细阅读本节）
+## 开始之前
+
+维护 QuestMath Tutoring Hub 对于个人能力没有太多要求，关键是喜欢开源，愿意花时间做，把自己的所学与他人分享。
+
+在维护 QuestMath Tutoring Hub 的过程中，没有任何指派性的任务，想写什么就写什么，觉得哪里写的不好就完善哪里。
+
+如果觉得之前的人写得不好，可以与其讨论，将其打造为更为合理的结构。
 
 参与 QuestMath Tutoring Hub 的编写 **需要** 一个 GitHub 账号（可以前往 [GitHub 的账号注册页面](https://github.com/signup) 页面注册），但 **不需要** 高超的 GitHub 技巧，即使你是一名新手，只要按照下面所述的步骤操作，也能够 **非常出色** 地完成编辑。
+**请务必在看完本章节所有内容后再开始您的贡献。**
 
 !!! warning Tips
     在你的更改被合并到 QuestMath Tutoring Hub 的主仓库之前，你对 QuestMath Tutoring Hub 的内容所作出的修改均不会出现在 QuestMath Tutoring Hub 的主站上，所以无需担心你的修改会破坏 QuestMath Tutoring Hub 上正在显示的内容。
     
     如果还是不放心，可以查看 [GitHub 的官方教程](https://skills.github.com/)。
+
+
+## 在 GitHub 上编辑（请仔细阅读本节）
 
 ### 编辑单个页面内的内容
 

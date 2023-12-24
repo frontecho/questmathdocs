@@ -2,4 +2,4 @@
 
 Build with Mkdocs
 
-[Welcome to Our Tutoring Hub](https://math.frontecho.cn)
+[Welcome to Our Tutoring Hub](https://math.frontecho.top)
