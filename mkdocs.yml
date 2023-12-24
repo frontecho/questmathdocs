@@ -17,7 +17,8 @@ theme:
     logo: material/notebook-outline
   # logo: _static/assets/favicon.png
   favicon: _static/assets/favicon.png
-  custom_dir: overrides
+  # custom_dir: overrides
+  custom_dir: mkdocs-material/material/templates
   # include_search_page: false
   # search_index_only: true
   font:
