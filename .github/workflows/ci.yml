@@ -27,6 +27,8 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: |
+          git submodule init
+          git submodule update
           pip install mkdocs-material \
           mkdocs-glightbox \
           mkdocs-minify-plugin \
