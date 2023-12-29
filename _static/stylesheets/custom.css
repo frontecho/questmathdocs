@@ -1,57 +1,9 @@
-/* MKDOCS_GIT_COMMITTERS Display List of Committers */
-.contributors{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* display:inline-block; */
-  list-style:none;
-  margin:0!important;
-  padding:0!important
-}
-.contributors a.md-author {
-  display: inline-block;
-  margin-right: 10px;
-  border-radius: 100%;
-  display: block;
-  flex-shrink: 0;
-  height: 1.6rem;
-  overflow: hidden;
-  position: relative;
-  transition: color 125ms,transform 125ms;
-  width: 1.6rem
-}
-.contributors a.md-author img {
-  display: block
+.hide-on-mobile {
+  display: none;
 }
 
-.contributors--more {
-  background: var(--md-default-fg-color--lightest);
-  color: var(--md-default-fg-color--lighter);
-  font-size: .6rem;
-  font-weight: 700;
-  line-height: 1.6rem;
-  text-align: center
-}
-
-.contributors--long {
-  height: 2.4rem;
-  width: 2.4rem
-}
-
-.contributors a.md-author {
-  transform: scale(1)
-}
-
-.contributors a.md-author img {
-  filter: grayscale(100%) opacity(75%);
-  transition: filter 125ms
-}
-
-.contributors a.md-author:focus,.contributors a.md-author:hover {
-  transform: scale(1.1);
-  z-index: 1
-}
-
-.contributors a.md-author:focus img,.contributors a.md-author:hover img {
-  filter: grayscale(0)
+@media only screen and (min-width: 600px) {
+  .hide-on-mobile {
+      display: block;
+  }
 }
