@@ -32,8 +32,9 @@ jobs:
           mkdocs-minify-plugin \
           mkdocs-statistics-plugin \
           mkdocs-git-revision-date-localized-plugin \
-          mkdocs-git-committers-plugin-2
-        # mkdocs-heti-plugin jieba
+          mkdocs-git-committers-plugin-2 \
+          jieba
+        # mkdocs-heti-plugin 
       - run: mkdocs gh-deploy --force
         env:
           MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.MKDOCS_GIT_COMMITTERS_APIKEY }}

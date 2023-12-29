@@ -147,8 +147,9 @@ plugins:
   - search:
       lang:
         - en
+        # - zh
         - ja
-      separator: '[\s\-\.]+'
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   - minify:
       minify_html: true
   - tags:
